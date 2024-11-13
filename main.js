@@ -8,7 +8,7 @@
 // control + Backtick (`) = brings up terminal
 // 
 // git add .
-// 
+// git commit -m "notess"
 // 
 
 
