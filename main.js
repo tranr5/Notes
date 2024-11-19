@@ -126,25 +126,39 @@
 // }
 // console.log(isAVowel('b'))
 // 4. getTwoLengths
-function getTwoLengths(word1, word2) {
-    return [word1.length,word2.length]
-}
-console.log(getTwoLengths("dog","pizza"))
+// function getTwoLengths(word1, word2) {
+//     return [word1.length,word2.length]
+// }
+// console.log(getTwoLengths("dog","pizza"))
 // 5. sumArray
-function sumArray(arr) {
-    // YOUR CODE HERE
-}
-
+// function sumArray(arr) {
+//     let sum = 0
+//     for (let i = 0; i < arr.length; i++) {
+//         sum = arr[i] + sum 
+//     }
+//     return sum
+// }
+// console.log(sumArray([5,5,6,9]))
 // 6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
+    if (num <= 1) return false
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            return false
+        }
+    }
+    return true
 }
-
+// console.log(checkPrime(91))
 // 6.2 printPrimes
 function printPrimes(num) {
-    // YOUR CODE HERE
+    for (let i = 2; i <= num; i++) {
+        if (checkPrime(i) === true) {
+            console.log(i)
+        }
+    }
 }
-
+printPrimes(97)
 // 7. printLongestWord
 function printLongestWord(arr) {
     // YOUR CODE HERE
