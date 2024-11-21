@@ -140,29 +140,36 @@
 // }
 // console.log(sumArray([5,5,6,9]))
 // 6.1 checkPrime
-function checkPrime(num) {
-    if (num <= 1) return false
-    for (let i = 2; i <= Math.sqrt(num); i++) {
-        if (num % i === 0) {
-            return false
-        }
-    }
-    return true
-}
+// function checkPrime(num) {
+//     if (num <= 1) return false
+//     for (let i = 2; i <= Math.sqrt(num); i++) {
+//         if (num % i === 0) {
+//             return false
+//         }
+//     }
+//     return true
+// }
 // console.log(checkPrime(91))
 // 6.2 printPrimes
-function printPrimes(num) {
-    for (let i = 2; i <= num; i++) {
-        if (checkPrime(i) === true) {
-            console.log(i)
-        }
-    }
-}
-printPrimes(97)
+// function printPrimes(num) {
+//     for (let i = 2; i <= num; i++) {
+//         if (checkPrime(i) === true) {
+//             console.log(i)
+//         }
+//     }
+// }
+
 // 7. printLongestWord
-function printLongestWord(arr) {
-    // YOUR CODE HERE
-}
+// function printLongestWord(arr) {
+//     let longestWord = ''
+//     for (let word of arr) { 
+//         if (word.length > longestWord.length) {
+//             longestWord = word
+//         }
+//     }
+//     return longestWord
+// }
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 
 // BONUS!
 
@@ -193,3 +200,30 @@ function sumPositive(arr) {
 //     findNeedle,
 //     sumPositive
 // };
+// const game = {title: 'Guess the Number!'};
+// console.log(game);
+
+
+let movies = [ 'Caddyshack', 'Interstellar', 'Scarface', 'Trading Places'];
+movies.splice(2, 0, 'Spaceballs', 'Alien');
+// console.log(movies); // [ 'Caddyshack', 'Interstellar', 'Spaceballs', 'Alien', 'Scarface', 'Trading Places' ]
+
+let removedMovies = movies.splice(0, 3);
+// console.log(movies); // [ 'Alien', 'Scarface', 'Trading Places' ]
+removedMovies = movies.splice(1, 0, 'The Sting', 'Another movie');
+
+// console.log(removedMovies); // []
+
+// console.log(movies); // [ 'Alien', 'The Sting', 'Another movie', 'Scarface', 'Trading Places' ]
+
+// movies.forEach(function (movie) {
+//     console.log(movie);
+//   });
+
+//   movies.forEach(function (movie, idx) {
+//     console.log(idx + ") " + movie);
+//   });
+for (let movie of movies) {
+    if (movie === "The Last Airbender") break;
+    console.log(movie);
+  }
