@@ -223,7 +223,113 @@ removedMovies = movies.splice(1, 0, 'The Sting', 'Another movie');
 //   movies.forEach(function (movie, idx) {
 //     console.log(idx + ") " + movie);
 //   });
-for (let movie of movies) {
-    if (movie === "The Last Airbender") break;
-    console.log(movie);
+
+
+// for (let movie of movies) {
+//     if (movie === "The Last Airbender") break;
+//     console.log(movie);
+//   }
+
+
+// const map = function (array, callback){
+// 	let output = []
+// 	for (let i = 0; i< array.length; i++){
+// 		output.push(callback(array[i]))
+// 	}
+// 	return output 
+// }
+
+// const double = function (num) {
+// 	return num*2 
+// }
+
+// const doubledNumbers = map([1,2,3], double)
+
+// console.log(doubledNumbers)
+
+
+
+// const game = {
+//     title: 'Guess the Number!',
+//     biggestNum: 100,
+//   };
+// for (let key in game) {
+//     console.log(`The value of the ${key} property is ${game[key]}`);
+//   }
+
+
+
+const batman = {
+    persona: "Batman",
+    identity: "Bruce Wayne",
+    health: 100,
+    damage: 30,
+    // this is a method 
+    revealIdentity(){
+      console.log(`I'm ${this.persona}!`);
+    },
+  
+  takeDamage(amount){
+    return this.health = this.health - amount;
   }
+}
+// console.log(batman.takeDamage(10))
+
+const minions = [
+	'bob',
+	'stuart',
+	'dave',
+	'jerry',
+	'kevin',
+	'mark',
+	'tim',
+	'phil',
+	'carl'
+];
+minions.forEach(function(name) {
+    // console.log(name+" - here")
+});
+
+// let capitalName = minions.map(function(here) {
+//     return here.charAt(0).toUpperCase() + here.slice(1).toLowerCase();
+// })
+// console.log(capitalName)
+
+// let capitalizedMinion = minions.map(function(name) {
+//     if (name != 'kevin') {
+//         return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+//     } else {return name }
+// })
+
+// // console.log(capitalizedMinion)
+
+// const isCapitalized = (name) => {
+//     return name[0] === name[0].toUpperCase(); // Checks if first letter is uppercase
+// };
+// // const capitalizedMinions = ['Bob', 'Stuart', 'Dave', 'Jerry', 'Kevin', 'Mark', 'Tim', 'Phil', 'Carl'];
+// let allCapitalized = capitalizedMinion.every(isCapitalized);
+
+// console.log(isCapitalized);
+
+
+
+
+const solarSystem = [    { name: "Mercury", ringSystem: false, moons: [] }, 
+   { name: "Venus", ringSystem: false, moons: [] },
+   { name: "Mars", ringSystem: false, moons: ["Phobos", "Deimos"] },
+    { name: "Earth", ringSystem: false, moons: ["The Moon"] },
+    { name: "Jupiter", ringSystem: true, moons: ["Europa", "Ganymede", "Io", "Callisto"] },
+    { name: "Saturn", ringSystem: true, moons: ["Titan", "Enceladus", "Rhea", "Mimas"] },
+    { name: "Uranus", ringSystem: true, moons: ["Miranda", "Titania", "Ariel", "Umbriel"] },
+    { name: "Neptune", ringSystem: true, moons: ["Triton", "Nereid"] }];
+
+const neptune = solarSystem[7]
+
+// console.log(neptune.moons[1])
+
+// solarSystem.push({name: "Pluto", ringSystem: false, moons:["Clayon"]})
+
+// console.log(solarSystem)
+solarSystem[6].moons[3] = "huhiuo"
+// uranus.replace("fse")
+console.log(solarSystem)
