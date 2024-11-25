@@ -445,3 +445,21 @@ const mcuMovies = [
 
 
 // findMovies(mcuMovies);
+
+const instruments = {
+    banjo: ["1920 gibson", "deering", "washburn"],
+    guitar: {
+      acoustic: ["martin", "taylor", "santa cruz", "gibson"],
+      electric: ["fender Strat", "telecaster", "PRS", "languedoc"],
+      nylon: ["baldwin", "cordoba"]
+    },
+    mandolin: ["eastman", "weber", "collings"]
+  }
+
+//   console.log(instruments.guitar.electric[1])
+function elecGuitar() {
+    for (let i = 0; i < instruments.guitar.electric.length; i++) {
+        console.log(instruments.guitar.electric[i])
+    }
+}
+elecGuitar()
