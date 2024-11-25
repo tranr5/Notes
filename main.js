@@ -332,4 +332,116 @@ const neptune = solarSystem[7]
 // console.log(solarSystem)
 solarSystem[6].moons[3] = "huhiuo"
 // uranus.replace("fse")
-console.log(solarSystem)
+// console.log(solarSystem)
+
+
+const ironMan = {
+    regularName: 'Anthony Edward "Tony" Stark',
+    abilities: ['genius-level intellect', 'proficient scientist and engineer', 'powered armor suit'],
+    marvelMovieAppearances: {
+        ironMan: true,
+        theHulk: true,
+        ironManTwo: true,
+        thor: false,
+        captainAmerica: false,
+        theAvengers: true,
+        ironManThree: true,
+        thorTwo: false,
+        captainAmericaTwo: false,
+        guardiansOfTheGalaxy: false,
+        avengersTwo: true,
+        antMan: false,
+        captainAmericaThree: true,
+        doctorStrange: false,
+        guardiansOfTheGalaxyTwo: false,
+        spiderManHomecoming: false,
+        thorThree: false,
+        blackPanther: false,
+        avengersThree: true
+    },
+    jarvisAreYouThere: () => {
+       console.log('At your service, sir')
+    }
+}
+
+// console.log(ironMan.abilities[2])
+
+// ironMan.abilities.forEach(ability => {
+//     console.log(ability);
+// });
+// ironMan.marvelMovieAppearances.spiderManHomecoming = true
+// console.log(ironMan.marvelMovieAppearances.spiderManHomecoming)
+// ironMan.jarvisAreYouThere()
+
+function createCaptain() {
+    return {
+        aliases: {
+            superheroName: 'Captain America'
+        },
+        abilities: [
+            'superhuman',
+            'enhanced speed',
+            'peak human performance'
+        ],
+        sayPhrase() {
+            return "I can do this all day"
+        }
+    };
+}
+// console.log(createCaptain().aliases.superheroName)
+// console.log(createCaptain().sayPhrase())
+
+
+const blackWidow = {
+        aliases: {
+            realName: "Natalia Aliananova",
+        otherNotableAliases: [
+            "black widow",
+            "natalie Rushman"
+        ]
+    }
+}    
+
+// console.log(blackWidow.aliases.otherNotableAliases[1])
+
+const theAvengers = [
+    { name: 'Tony Stark', superheroName: 'Iron Man'},
+    { name: 'Steve Rogers', superheroName: 'Captain America' },
+    { name: 'Bruce Banner', superheroName: 'The Hulk'},
+    { name: 'Thor' },
+    { name: 'Natasha Romanoff', superheroName: 'Black Widow' },
+    { name: 'Clint Barton', superheroName: 'Hawkeye' }
+  ]
+
+//   for (const avenger of theAvengers) {
+//     console.log(avenger.name); // Logs the 'name' property of each avenger
+// }
+
+// for (let i=0; i<theAvengers.length; i++) {
+//     console.log(theAvengers[i].name)
+// }
+
+const mcuMovies = [
+    ['ant-man', 'ant-man and the wasp'],
+    ['the avengers', 'avengers: age of ultron', 'avengers: infinity war', 'avengers: end game'],
+    ['black panther'],
+    ['captain america: the first avenger', 'captain america: the winter soldier', 'captain america: civil war'],
+    ['doctor strange'],
+    ['guardians of the galaxy', 'guardians of the galaxy vol.2'],
+    ['the hulk'],
+    ['iron man', 'iron man 2', 'iron man 3'],
+    ['spiderman: homecoming'],
+    ['thor', 'thor: the dark world', 'thor: ragnarok']
+  ]
+
+// function findMovies(movies) {
+//     for (let i = 0; i < movies.length; i++) {
+//         // console.log(movies[i])
+//         for(let j = 0; j < movies[i].length; j++) {
+//             console.log(movies[i][j])
+//         }
+//     }
+// }
+
+
+// findMovies(mcuMovies);
