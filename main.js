@@ -446,20 +446,52 @@ const mcuMovies = [
 
 // findMovies(mcuMovies);
 
-const instruments = {
-    banjo: ["1920 gibson", "deering", "washburn"],
-    guitar: {
-      acoustic: ["martin", "taylor", "santa cruz", "gibson"],
-      electric: ["fender Strat", "telecaster", "PRS", "languedoc"],
-      nylon: ["baldwin", "cordoba"]
-    },
-    mandolin: ["eastman", "weber", "collings"]
+// const instruments = {
+//     banjo: ["1920 gibson", "deering", "washburn"],
+//     guitar: {
+//       acoustic: ["martin", "taylor", "santa cruz", "gibson"],
+//       electric: ["fender Strat", "telecaster", "PRS", "languedoc"],
+//       nylon: ["baldwin", "cordoba"]
+//     },
+//     mandolin: ["eastman", "weber", "collings"]
+//   }
+
+// //   console.log(instruments.guitar.electric[1])
+// function elecGuitar() {
+//     for (let i = 0; i < instruments.guitar.electric.length; i++) {
+//         console.log(instruments.guitar.electric[i])
+//     }
+// }
+// elecGuitar()
+
+const garmonbozia = {
+    meltedFace: true,
+    wobblyArms: true,
+    mysteryMeats: [
+      'Schlimmbinooks',
+      'blangs',
+      { place: 'Akrotiri', treasures: ['Minoan temples', 'volcanoes'] },
+      { type: 'Yuck-tops', deliverables: [
+        'Nevermind',
+        { zone: 'safety-zone' },
+        { zone: false, true: true },
+        () => {
+          return () => {
+            return () => {
+              return () => {
+                return () => {
+                  return { website: 'Gossipcop.com', what: {
+                    offering: 'creamed corn', location: 'dark'
+                  }
+                  }
+                }
+              }
+            }
+          }
+        }
+       ]
+      }
+    ]
   }
 
-//   console.log(instruments.guitar.electric[1])
-function elecGuitar() {
-    for (let i = 0; i < instruments.guitar.electric.length; i++) {
-        console.log(instruments.guitar.electric[i])
-    }
-}
-elecGuitar()
+ console.log(garmonbozia.mysteryMeats[3].deliverables[3]()()()()().what.offering) 
