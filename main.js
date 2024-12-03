@@ -464,34 +464,69 @@ const mcuMovies = [
 // }
 // elecGuitar()
 
-const garmonbozia = {
-    meltedFace: true,
-    wobblyArms: true,
-    mysteryMeats: [
-      'Schlimmbinooks',
-      'blangs',
-      { place: 'Akrotiri', treasures: ['Minoan temples', 'volcanoes'] },
-      { type: 'Yuck-tops', deliverables: [
-        'Nevermind',
-        { zone: 'safety-zone' },
-        { zone: false, true: true },
-        () => {
-          return () => {
-            return () => {
-              return () => {
-                return () => {
-                  return { website: 'Gossipcop.com', what: {
-                    offering: 'creamed corn', location: 'dark'
-                  }
-                  }
-                }
-              }
-            }
-          }
-        }
-       ]
-      }
-    ]
-  }
+// const garmonbozia = {
+//     meltedFace: true,
+//     wobblyArms: true,
+//     mysteryMeats: [
+//       'Schlimmbinooks',
+//       'blangs',
+//       { place: 'Akrotiri', treasures: ['Minoan temples', 'volcanoes'] },
+//       { type: 'Yuck-tops', deliverables: [
+//         'Nevermind',
+//         { zone: 'safety-zone' },
+//         { zone: false, true: true },
+//         () => {
+//           return () => {
+//             return () => {
+//               return () => {
+//                 return () => {
+//                   return { website: 'Gossipcop.com', what: {
+//                     offering: 'creamed corn', location: 'dark'
+//                   }
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+//        ]
+//       }
+//     ]
+//   }
 
- console.log(garmonbozia.mysteryMeats[3].deliverables[3]()()()()().what.offering) 
+//  console.log(garmonbozia.mysteryMeats[3].deliverables[3]()()()()().what.offering) 
+
+
+// const arr = [4,5,6,7,8]
+
+// function simpleArraySum(addd) {
+//     sumArray = 0
+//     for (let i = 0; i < addd.length; i++) {
+//         sumArray = sumArray + addd[i]
+//     }
+//     return sumArray
+// }
+
+// console.log(simpleArraySum(arr))
+
+
+
+
+var fizzBuzz = function(n) {
+
+arr = []
+for (let i = 1; i <= n; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        arr.push("Fizzbuzz")
+    } else if (i % 3 === 0) {
+        arr.push("Fizz")
+    } else if (i % 5 === 0) {
+        arr.push("Buzz")
+    } else {
+        arr.push(`${i}`)
+    }
+}
+return arr
+};
+
+console.log(fizzBuzz(16))
