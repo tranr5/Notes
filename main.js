@@ -512,21 +512,117 @@ const mcuMovies = [
 
 
 
-var fizzBuzz = function(n) {
+// var fizzBuzz = function(n) {
 
-arr = []
-for (let i = 1; i <= n; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-        arr.push("Fizzbuzz")
-    } else if (i % 3 === 0) {
-        arr.push("Fizz")
-    } else if (i % 5 === 0) {
-        arr.push("Buzz")
-    } else {
-        arr.push(`${i}`)
-    }
-}
-return arr
+// arr = []
+// for (let i = 1; i <= n; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//         arr.push("Fizzbuzz")
+//     } else if (i % 3 === 0) {
+//         arr.push("Fizz")
+//     } else if (i % 5 === 0) {
+//         arr.push("Buzz")
+//     } else {
+//         arr.push(`${i}`)
+//     }
+// }
+// return arr
+// };
+
+// console.log(fizzBuzz(16))
+
+
+
+
+const tweet = {
+    created_at: "Thu Dec 19 17:41:57 +0000 2018",
+    id_str: "994633657141813248",
+    text: 'Just another Extended Tweet with more than 140 characters, generated as a documentation example, showing that ["tru… https://t.co/U7Se4NM7Eu',
+    display_text_range: [0, 140],
+    truncated: true,
+    user: {
+        id_str: "944480690",
+        screen_name: "ExampleName",
+    },
+    extended_tweet: {
+        full_text: 'Just another Extended Tweet with more than 140 characters, generated as a documentation example, showing that ["truncated": true] and the presence of an "extended_tweet" object with complete text and "entities" #documentation #parsingJSON #GeoTagged https://t.co/e9yhQTJSIA',
+        display_text_range: [0, 249],
+        entities: {
+            hashtags: [
+            {
+                text: "documentation",
+                indices: [211, 225],
+            },
+            {
+                text: "parsingJSON",
+                indices: [226, 238],
+            },
+            {
+                text: "GeoTagged",
+                indices: [239, 249],
+            },
+        ],
+        },
+    },
+    comments: [
+        {
+        created_at: "Thu May 10 19:13:57 +0000 2018",
+        id_str: "994633657141813248",
+        text: "Just a simple comment",
+        user: {
+            id_str: "944488470",
+            screen_name: "ExampleNameTwo",
+        },
+        },
+    ],
 };
 
-console.log(fizzBuzz(16))
+// console.log(tweet.user.screen_name)
+// console.log(tweet.comments[0].text)
+// console.log(tweet.extended_tweet.full_text)
+// console.log(tweet.extended_tweet.entities.hashtags[0].text)
+// tweet.user.screen_name = "ryan"
+// console.log(tweet.user.screen_name)
+// tweet.comments[1] =  { created_at: "Thu May 10 19:13:57 +0000 2018",
+// id_str: "994633657141813248",
+// text: "Another comment",
+// user: {
+//     id_str: "944488470",
+//     screen_name: "ExampleNameThree",
+// },
+// }
+// console.log(tweet.comments)
+
+
+
+
+
+const game = {
+    name: 'timer game',
+    extra_variables: {
+        start: false,
+        timer:10,
+        testing_this() {
+            console.log(this)
+        },
+        pie: {
+            name: 'yes',
+            testtest() {
+                console.log(this)
+            }
+        }
+    }, 
+    start() {
+        const gameTimer = setInterval( () => { 
+            if (this.extra_variables.timer === 0) {
+                console.log("game over")
+                clearInterval(gameTimer)
+            } else{
+            this.extra_variables.timer -= 1
+            console.log(this.extra_variables.timer)
+            }
+        }, 500);  
+    }
+}
+
+game.start()
